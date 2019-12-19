@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="eBird.css">
+<title>Importing AviSys stream files</title>
+</head>
+<body>
+<h1>Importing AviSys stream files</h1>
+<p>In case you are not familiar with importing data via an AviSys stream file, here is a quick tutorial.
+Once you have downloaded your stream file, possibly accompanied by a field notes file,
+use AviSys to perform the steps listed below.
+Note: An AviSys stream file has an extension of .str.
+It may be accompanied by a field notes file, which has the same filename but an extension of .fnr.
+</p>
+<ol>
+<li>Switch to world mode.</li>
+<li>Click File->Sighting Record Streaming->Read Stream from File...</li>
+<li>Use the Windows explorer dialog to find your stream file and select it.</li>
+<li>AviSys will display a series of message boxes that you will have to dismiss.
+If all is going well, these messages will be
+<ol style="list-style:lower-alpha">
+<li>This file passes the Version 6 Stream File test.</li>
+<li>Stream File loaded into Sighting Stream.</li>
+<li>That means it's just loaded into memory. It has not been added to your sighting file.</li>
+<li>To add these records to your sighting file you must use "Import Records From Stream".</li>
+</ol>
+</li>
+<li>Optional: You can press F8 to have a quick look at your data that is ready to import.</li>
+<li>Click File->Sighting Record Streaming->Import Records From Stream...</li>
+<li>Again, Avisys will display a series of message boxes that you will have to dismiss.
+If all is going well, these messages will be
+<ol style="list-style:lower-alpha">
+<li>All records checked OK - ready to import...</li>
+<li>OK to add ___ sighting records to your sighting file? (Click Yes)</li>
+<li>Confirm each of ___ records before importing? (Click Yes or No)</li>
+</ol>
+<p>If you choose to confirm each record, AviSys will present them one at a time,
+and you can edit them as you go, or choose to skip certain records.
+This may sometimes be useful but it gets quite tedious for a long list.</p>
+<p>If you choose not to confirm each record, they will all be immediately loaded
+and you can go to the Journal to review and edit them.</p>
+</li>
+<li>If your imported list includes any life birds, or any species new to any of your checklists,
+you will need to run <strong>Utilities-&gt;Set Checklist Markers</strong> after importing.
+</li>
+</ol>
+</body>
+</html>
